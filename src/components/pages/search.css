@@ -1,0 +1,72 @@
+/* Se2.css */
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.search {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.top {
+    margin-bottom: 20px;
+}
+
+.temp h1 {
+    font-size: 36px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feels,
+.humidity,
+.wind {
+    flex: 1;
+}
+
+.bold {
+    font-weight: bold;
+}
